@@ -1,0 +1,533 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+	margin: 0;
+   
+}
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+	width: 100%;
+	padding-right: 0rem;
+	padding-left: 0rem;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+
+/* .................section 1 ............*/
+.hadder {
+	position: sticky;
+	background: #1b183b;
+	padding: 15px 0px;
+}
+.navbar-brand img {
+	width: 150px;
+	height: auto;
+}
+
+/* menu section */
+
+.footer li {
+	padding: 10px 20px;
+	/* text-decoration: none; */
+	color: #4a488c;
+    z-index: 1;
+}
+.footer li a {
+	text-decoration: none;
+	color: #fff;
+	font-weight: 504;
+	transition: .3s;
+	position: relative;
+}
+.footer li a span{
+    padding-right: 6px;
+
+}
+.footer li a:hover {
+	color: rgb(246, 19, 19);
+	font-size: 16px;
+}
+/* dropdown */
+
+.footer li ul {
+	position: absolute;
+	width: 220px;
+	top: 100%;
+	transition: .5s;
+	list-style: none;
+	background: #1b183b;
+	visibility: hidden;
+	opacity: 0;
+	z-index: -1;
+}
+.footer li:hover ul{
+    visibility: visible;
+    opacity: 1;
+}
+.footer li ul li {
+	padding: 10PX;
+	margin-left: -16px;
+}
+
+
+
+
+/* icon&button */
+
+.icon {
+	align-items: center;
+	display: flex;
+	padding: 10px;
+	font-size: 20px;
+	BORDER-LEFT: 1PX SOLID #DDD !important;
+}
+.icon i {
+	padding: 0PX 10PX;
+    color: #4a488c;
+}
+
+.button a {
+	background-color: #e61e1e !important;
+	border-color: #e31515 !important;
+	color: white;
+	transition: 0.3s;
+	border-radius: 8px;
+	padding: 10px 20px;
+}
+.button a i{
+    margin-right: 10px;
+}
+
+.btn {
+	position: relative;
+	color: white;
+	display: block;
+	font-size: 15px;
+	border: 1px solid #db3434;
+	padding: 10px 20px;
+	overflow: hidden;
+	transition: .5s ease;
+}
+.btn:hover{
+    color: white;
+}
+
+
+.btn::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 0%;
+    background-color: #db3434;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+    transition: .7s all ease;
+}
+.btn:hover::before{
+    height:  100%;
+}
+.btn i{
+	margin-right: 10px;
+}
+.common-button{
+	margin-left: 30px;
+}
+
+/*             section 2     ,,,,,,,,,,,,,,,,,, */
+/* background section */
+
+.background {
+	background-image: url(./img/60fffe430ffba1627389507.jpg);
+	width: 100%;
+	height: 624px;
+	background-position: center;
+	background-repeat: no-repeat;
+	z-index: 1;
+}
+.background::before{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 700px;
+	background:linear-gradient(to top, rgba(23, 23, 58, 0.98), rgba(23, 23, 58, 0.45));
+	z-index:;
+
+}
+.hero-text {
+	justify-content: center;
+	align-items: center;
+
+	margin-top: 150px;
+	z-index: 10;
+	color: white;
+}
+.hero-text h1{
+	font-size: 3.5rem;
+}
+.container-fluid{
+	position: absolute;
+}
+
+.hero-dropdown.d-flex {
+	
+	padding: 15px 0px;
+	border-radius: 10px;
+	justify-content:space-between;
+	margin-top: 40px;
+	background: linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 30px) calc(100% - 30px) no-repeat,
+            linear-gradient(91deg, #eb6161 3%, #36279e 99%);
+	border-radius: 6px;
+	padding: 15px;
+	box-sizing: border-box;
+	padding: 22px;
+	box-sizing: border-box;
+}
+#dropdownMenuButton {
+	padding: 13px 50px;
+	margin-right: 29px;
+	font-size: 17px;
+	color: #000000a8;
+	background: white;
+	border: none;
+}
+.regular i {
+	color: #db3434;
+	font-size: 20px;
+	margin-right: 16px;
+}
+.btn {
+	position: relative;
+	color: #fff6f6;
+	display: block;
+	font-size: 15px;
+	border: 1px solid #db3434;
+	padding: 9px 15px;
+	overflow: hidden;
+	transition: .5s ease;
+	background: #ff0000c9;
+
+	border-radius: 8px;
+}
+.btn{
+	font-size: 18px;
+}
+.btn-outline-primary:hover {
+	color: #fff;
+	background-color: #f00;
+	border-color: #fd0d0d;
+}
+
+/*.................................... section-3............................... */
+/* ..............................Blood Donors............................. */
+.blood-donar{
+	background: url(./img/60fff77d8bf601627387773.png);
+	width: 100%;
+	height: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	
+	opacity: 1.2;
+}
+.donar-text {
+	margin: 70px 0px;
+}
+.donar-text h1 {
+	font-weight: 524;
+	text-align: center;
+	font-size: 45px;
+}
+.blood-group {
+	background: #111146;
+	text-align: center;
+	padding: 30px 0px;
+	margin: 10px;
+	border-radius: 10px;
+}
+
+.blood-group{}
+.blood-group h2 {
+	color: #f00;
+}
+.blood-group h2 i{ 
+	margin-right: 5px;
+}
+.blood-group h4 {
+	color: white;
+	font-size: 18px;
+}
+.blood-group {
+	position: relative;
+	overflow: hidden;
+}
+.absulate {
+	position: absolute;
+	right: -5px;
+	bottom: -29px;
+	font-size: 85px;
+	color: #de0c0c69;
+	overflow: hidden;
+}
+.main-donar {
+	margin-bottom: 80px;
+}
+
+
+/* ...........................section - 4 ........................... */
+/* .......................... BloodLab.................... */
+
+.bloodlab {
+	background: -webkit-linear-gradient(to bottom, rgba(251, 54, 64, 0.15), #fff);
+	background: linear-gradient(to bottom, rgba(251, 54, 64, 0.15), #fff);
+	padding: 90px 0px;
+}
+.left-lab{}
+.left-lab img{
+	width: 100%;
+}
+
+.play-animation {
+	font-size: 50px;
+	width: 110px;
+	height: 110px;
+	display: inline-block;
+	background-color: #f00;
+	line-height: 90px;
+	text-align: center;
+	border-radius: 50%;
+	position: absolute;
+	right: -17px;
+	bottom: -17px;
+	color: white;
+	padding-top: 11px;
+}
+.play-animation:hover{
+	color: white;
+}
+.play-animation::before {
+	content: "";
+	position: absolute;
+	top: -4px;
+	left: -6px;
+	background: #e73c3e;
+	height: 120px;
+	width: 120px;
+	border-radius: 50%;
+	animation: animation 1.5s ease-out infinite;
+}
+@keyframes animation{
+  0%{
+    transform: scale(1);
+    opacity: 1;
+  }
+  
+  
+  25%{
+    transform: scale(1.35);
+    opacity: .75;
+  }
+
+  50%{
+    transform: scale(1.65);
+    opacity: .50;
+  }
+  /* 75%{
+	transform: scale(1.75);
+	opacity: .75;
+  } */
+  
+  100%{
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+.left-lab{
+	position: relative;
+}
+
+
+.right-lab {
+	margin-left: 35px;
+}
+.right-lab h1 {
+	font-weight: 501;
+	font-size: 50px;
+}
+.right-lab p {
+	color: #000000a6;
+	font-size: 17px;
+	line-height: 30px;
+}
+.blood-lab {
+	margin-top: 35px;
+}
+
+.right-data {
+	margin: 18px 0px;
+}
+.logo{}
+.logo i {
+	font-weight: 501;
+	font-size: 30px;
+	background: #0e0e0e;
+	color: red;
+	width: 60px;
+	height: 60px;
+	margin: auto;
+	text-align: center;
+	padding-top: 15px;
+	border-radius: 5px;
+}
+
+.data {
+	margin-left: 25px;
+}
+.data h4 {
+	font-size: 22px;
+}
+.data h6 {
+	font-size: 1rem;
+	font-size: 17px;
+	color: #00000091;
+	font-weight: 200;
+	margin: 10px 0px;
+	line-height: 24px;
+}
+
+/* .........................................section-5................. */
+/* ........................................Top-Donor................ */
+
+.Top-Donor {
+	text-align: center;
+	margin-top: 60px;
+}
+.top-img {
+	position: absolute;
+	opacity: 0.15;
+	border-top: 1px solid #0009;
+	left: 0;
+	border: 0;
+	z-index: -1;
+	height: 100%;
+	width: 100%;
+}
+.top-img img {
+	max-width: 100%;
+	height: auto;
+	user-select: none;
+}
+
+.Top-Donor h1 {
+	font-weight: 505;
+	font-size: 45px;
+}
+.Top-Donor p {
+	font-size: 18px;
+	color: #000000a8;
+	margin-bottom: 40px;
+}
+/* .............................card section........................ */
+.top-card {
+	padding: 8px;
+	margin-bottom: 10px;
+	transition: .3s;
+}
+.top-card:hover{
+	transform: translateY(8px);
+}
+.card-img{
+	position: relative;
+}
+.card-img img {
+	width: 100%;
+	border-radius: 10px;
+}
+
+.card-text {
+	position: absolute;
+	bottom: 0;
+	background: #191944;
+	width: 100%;
+	color: white;
+	text-align: center;
+	padding: 15px 0px;
+	border-radius: 0px 1px 10px 10px;
+}
+.card-text h2{
+	font-size: 20px;
+}
+.card-text h3 {
+	font-size: 16px;
+}
+.card-text h3 span {
+	color: red;
+	font-weight: 501;
+}
+
+.card-icon {
+	justify-content: center;
+	margin-top: 10px;
+}
+.card-icon i {
+	padding: 8px;
+	font-size: 15px;
+	background: red;
+	margin: 0px 8px;
+	border-radius: 8px;
+	color: white;
+	transition: .3s;
+}
+.card-icon i:hover {
+
+	background: #0f0f3b;
+}
+/* ..............................................section-6........................ */
+/*  ...............Bloodlab is committed to advancing public policies that promote safety, increase availability, and spur innovation.... */
+.comitted {
+	background: url(./img/60fff964007751627388260.jpg);
+	background-size: cover;
+	background-position: right;
+}
+
+.comitted::before{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: rgb(0,0,0);
+	background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(228,5,5,1) 100%);
+	height: 100%;
+	width: 100%;
+	opacity: 0.7;
+}
+.comitted h1 {
+	text-align: center;
+	padding-top: 80px;
+	color: white;
+	position: relative;
+	font-weight: 400;
+}
+.comt-blog {
+	display: flex !important;
+	justify-content: space-around;
+	position: relative;
+}
+.blog {
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 50px;
+}
+.blog i {
+	font-size: 45px;
+	color: #ff1414de;
+}
+.blog h4 {
+	color: white;
+	margin-top: 10px;
+}
